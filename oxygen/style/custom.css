@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	padding-top:80px;
+}
+
+body.pagelayout-frontpage.notloggedin{
+	padding-top:0;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Raleway', sans-serif;
+}
+
+.main-nav{	
+	background-color: rgba(11,11,11,0.9);
+	border-bottom:none;	
+	transition:all 0.5s ease-in-out;
+	top:-80px;
+	margin:0;
+}
+
+.main-nav.sticky {
+	top:0px;
+}
+
+.navbar-brand{
+	padding: 10px 15px;
+}
+
+@media (max-width:768px){
+	.navbar-brand{
+		width:130px;
+		padding: 5px 5px;
+	}
+	
+	.main-nav{
+		min-height:60px;
+	}
+	
+	.navbar-collapse.collapse, .navbar-collapse.collapsing{
+		margin-top:60px;
+	}
+	
+	.navbar-toggle{
+		margin-right:0px;
+	}
+	
+	.user-menu-wrapper{
+		margin-top:8px;
+	}
+	
+	.navbar-nav{
+		margin-top:1px;
+	}
+}
+
+.banner-wrapper{
+	background-image:url([[pix:theme|banner]]);
+	background-size: cover;
+    padding: 0;
+    position: relative;
+	min-height:700px;
+}
+
+.banner-wrapper:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.65);
+	background: -moz-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,0,0,0.65)), color-stop(47%, rgba(0,0,0,0.81)), color-stop(100%, rgba(146,44,7,1)));
+	background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+	background: linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#922c07', GradientType=1 );
+}
+
+.banner-wrapper .container{
+	position:relative;
+}
+
+.banner-logo{
+	margin-top:40px;
+}
+
+.banner-detail{
+	padding:40px 180px;
+}
+
+.banner-detail h1{
+	font-size:56px;
+	color:#fff;
+	margin-bottom:20px;
+}
+
+.banner-detail p{
+	font-size:22px;
+	color:#fff;
+}
+
+.login-button a.btn-primary {
+    color: #fff;
+    background-color: #F75E26;
+    border-color: #F75E26;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+#loginModal{
+	top:60px;
+}
+
+#loginModal h4{
+	font-weight:bold;
+}
+
+#loginModal .form-group input{
+	width: 100%;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+	padding-left:0px;
+}
+
+@media (min-width: 768px){
+	.modal-dialog {
+		width: 400px;
+	}
+}
+
+.login-modal-footer .btn{
+	padding:8px 20px;
+	margin-left:0;
+	margin-right:5px;
+}
+
+.login-modal-footer .checkbox input{
+	margin-top:4px;
+}
+
+@media (min-width: 768px){
+	.main-nav .navbar-nav > li > a, .usermenu > li> a {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	
+	 .usermenu .dropdown-toggle{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+}
+
+.main-nav .navbar-nav > .open > a, .main-nav .navbar-nav > .open > a:hover, .main-nav .navbar-nav > .open > a:focus, 
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .usermenu > li> a:hover, .usermenu > li.open> a:hover,
+.usermenu > li.open> a:focus{
+	background:#000;
+}
+
+.usermenu > li > a {
+    color: #9d9d9d;
+}
+
+/*Login*/
+
+#page-login-index{
+	background-image:url([[pix:theme|banner]]);
+	background-size: cover;  
+}
+
+#page-login-index:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.65);
+    background: -moz-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,0,0,0.65)), color-stop(47%, rgba(0,0,0,0.81)), color-stop(100%, rgba(146,44,7,1)));
+    background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+    background: linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.81) 47%, rgba(146,44,7,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#922c07', GradientType=1 );
+}
+
+.login-wrapper .loginbox.twocolumns{
+	padding:100px;
+}
+
+.login-wrapper .loginbox.twocolumns .loginpanel{
+	float: right;
+    background: #eee;
+    border-radius: 3px;
+	padding:0;
+}
+
+.login-wrapper .loginbox .loginpanel>h2{
+	padding:15px 15px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+	margin:0 0 15px 0;
+	font-size: 22px;
+}
+
+.login-wrapper .loginbox .loginpanel .loginsub{
+	padding:0px 15px;
+}
+
+.login-wrapper .loginbox .loginpanel .guestsub{
+	padding: 0px 15px 15px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.login-wrapper .loginbox .loginpanel #loginbtn{
+	font-size:16px;
+	color: #fff;
+    background-color: #F75E26;
+    border-color: #F75E26;
+    border-radius: 3px;
+    padding: 7px 20px;
+}
+
+.login-wrapper .loginbox .loginpanel .rememberpass, .login-wrapper .loginbox .loginpanel .forgetpass{
+	padding:7px 0px 0px;
+}
+
+.login-wrapper .loginbox .loginpanel .desc{
+	line-height:20px;
+	margin-top:15px;
+}
+
+@media (min-width: 1200px){
+	.loginbox.twocolumns .signuppanel {
+		right: 8.33333333%;
+		left: 0;
+		color:#eee;
+	}
+}
+
+.loginbox.twocolumns .signuppanel .subcontent{
+	font-size:16px;
+}
+
+.loginbox.twocolumns .signuppanel .subcontent ol{
+	margin-top:10px;
+}
+
+
+.loginbox.twocolumns .signuppanel .subcontent ol li{
+	margin-bottom:5px;
+}
+
+.loginbox.twocolumns .signuppanel .subcontent .signupform{
+	text-align:center;
+	margin-top:20px;
+}
+
+.loginbox.twocolumns .signuppanel .subcontent .signupform input[type="submit"]{
+	font-size:16px;
+	color: #fff;
+    background-color: #F75E26;
+    border-color: #F75E26;
+    border-radius: 25px;
+    padding: 10px 30px;
+}

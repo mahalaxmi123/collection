@@ -1,0 +1,182 @@
+@media (min-width: 1200px){
+	.navbar .container {
+		width: 1170px;
+	}
+}
+
+.navbar-inner{
+	min-height:110px;
+}
+
+a.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+	height: 50px;
+	width: 320px;
+	margin-top:20px;
+}
+
+.dir-rtl a.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+.navbar-inner{
+	background: -moz-linear-gradient(100% 100% 90deg, #DEDEDE, #fff);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#DEDEDE));
+	border-bottom: 1px solid #fff;
+}
+
+.navbar-static-top .navbar-inner{
+	box-shadow:none !important;
+}
+
+#page-header{
+	min-height:45px;
+	background:#145b6d url([[pix:theme|breadcrumb]]) no-repeat 0 0;
+}
+
+#page-content{
+	background:#fff;
+	padding:15px;
+	box-sizing:border-box;
+	border-right:1px solid #bababa;
+	border-bottom:1px solid #bababa;
+	border-radius: 3px 0px 0px 0px;
+}
+
+.right-frame{
+	background:#cccccc url([[pix:theme|right-corner]]) no-repeat right top;
+	padding-right:10px;
+}
+
+.bottom-frame{
+	background:#cccccc url([[pix:theme|bottom-corner]]) no-repeat;
+	padding-bottom:10px;
+}
+
+.breadcrumb{
+	background:none;
+	padding:11px 15px;
+}
+
+.breadcrumb>li{
+	text-shadow:none;
+	color:#fff;
+}
+
+.breadcrumb>li a{
+	color:#fff;
+}
+
+
+/*login page*/
+
+.loginpanel{
+	border: 1px solid #ddd;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.loginbox .loginform .form-label{
+	float:none;
+	width:auto;
+	text-align:left;
+}
+
+.loginbox .loginform .form-input {
+	float: none;
+	width: auto;
+}
+
+.loginbox .loginform .form-input input{
+	width:100% !important;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left:0;
+}
+
+.loginbox h2{
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1;
+	background: #eee;
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+	text-align:center;
+}
+
+.loginbox .subcontent{
+	text-align:left;
+}
+
+.loginbox .guestsub{
+	margin:0;
+	padding-top: 0;
+	border-top: 1px dotted #ddd;
+}
+
+.loginbox .subcontent{
+	margin:0;
+}
+
+.footnote{
+	font-size:12px;
+	color:#999;
+}
+
+#page-mod-quiz-edit .questionbankwindow.block div.header{
+	background:#0F485B;
+}
+
+.user-grade td.oddd1, .user-grade th.oddd1{
+	background:#eee;
+}
+
+.user-grade,.user-grade thead, .user-grade tbody{
+	border:none;
+	font-size:100%;
+}
+
+.user-grade td.b1l, .user-grade td.b2l, .user-grade th.b1l, .user-grade th.b2l,
+.user-grade td.b1b, .user-grade td.b2b, .user-grade th.b1b, .user-grade th.b2b,
+.user-grade td.b1t, .user-grade td.b2t, .user-grade th.b1t, .user-grade th.b2t{
+	border:1px solid #e4e4e4;
+}
+
+.main-nav{
+	clear:right;
+	float:right;
+}
+
+#page{
+	background:url([[pix:theme|content_effect]]) repeat-x;
+	padding-top:15px;
+}
+
+@media (max-width: 767px){
+	body {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+select#id_category{
+	width:100%;
+}
+
+.flexible-wrap{
+	overflow-x: scroll;
+}
+
+#region-main{
+	border:1px solid #e4e4e4;
+	padding:0px 15px;
+}
+
+form legend{
+	padding-left:15px;
+}
+
+
+[[setting:customcss]]
